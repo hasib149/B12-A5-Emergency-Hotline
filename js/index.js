@@ -1,20 +1,16 @@
 // Navbar heart element
 const navbarHeart = document.getElementById("heart");
 
-// সব card heart আইকন
+//  card heart
 const cardHearts = document.querySelectorAll("#card-container .fa-heart");
 
 // click event listener
 cardHearts.forEach((heart) => {
   heart.addEventListener("click", () => {
-    // Navbar heart count বাড়ানো
+    // Navbar heart count
     let currentCount = parseInt(navbarHeart.innerText);
     currentCount++;
     navbarHeart.innerText = currentCount;
-
-    // optional: click করা heart কে full heart এ convert করা
-    heart.classList.remove("fa-regular");
-    heart.classList.add("fa-solid", "text-red-500");
   });
 });
 
