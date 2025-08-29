@@ -31,7 +31,7 @@ cardContainer.addEventListener("click", (e) => {
 
   if (!card) return;
 
-  // Heart icon click
+  // Heart
   if (target.classList.contains("fa-heart")) {
     navbarHeart.innerText = parseInt(navbarHeart.innerText) + 1;
   }
